@@ -57,6 +57,8 @@ namespace mazeRunner
 
             _sprite = new List<Sprites>()
             {
+
+                //player sprite
                 new Player(box)
                 {
                     Position = new Vector2(0,0),
@@ -71,13 +73,99 @@ namespace mazeRunner
 
                     Speed = 3.5f
                 },
+                
+                // circles going up and down
+                new Circles(circle)
+                {
+                    Position = new Vector2(100, ScreenHeight / 2),
+                    velocity = new Vector2 (0f, 350f),
+                },
 
                 new Circles(circle)
                 {
-                    Position = new Vector2(50, ScreenHeight / 2),
-                    velocity = new Vector2 (0f, 150f),
-                }
+                    Position = new Vector2(175, ScreenHeight / 2),
+                    velocity = new Vector2 (0f, 350f),
+                },
 
+                new Circles(circle)
+                {
+                    Position = new Vector2(250, ScreenHeight / 2),
+                    velocity = new Vector2 (0f, 350f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(325, ScreenHeight / 2),
+                    velocity = new Vector2 (0f, 350f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(400, ScreenHeight / 2),
+                    velocity = new Vector2 (0f, 350f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(475, ScreenHeight / 2),
+                    velocity = new Vector2 (0f, 350f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(550, ScreenHeight / 2),
+                    velocity = new Vector2 (0f, 350f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(625, ScreenHeight / 2),
+                    velocity = new Vector2 (0f, 350f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(700, ScreenHeight / 2),
+                    velocity = new Vector2 (0f, 350f),
+                },
+
+
+                // circles moving left and right 
+                new Circles(circle)
+                {
+                    Position = new Vector2(ScreenWidth / 2, 50),
+                    velocity = new Vector2(900f, 0f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(ScreenWidth / 2, 125),
+                    velocity = new Vector2(900f, 0f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(ScreenWidth / 2, 200),
+                    velocity = new Vector2(900f, 0f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(ScreenWidth / 2, 275),
+                    velocity = new Vector2(900f, 0f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(ScreenWidth / 2, 350),
+                    velocity = new Vector2(900f, 0f),
+                },
+
+                new Circles(circle)
+                {
+                    Position = new Vector2(ScreenWidth / 2, 425),
+                    velocity = new Vector2(900f, 0f),
+                },
             };
         }
 

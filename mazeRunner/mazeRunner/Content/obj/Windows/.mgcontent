@@ -4,7 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/elyvic/Desktop/Game Dev/mazeRunner/mazeRunner/Content/Red dot.png</File>
-    <File>C:/Users/elyvic/Desktop/Game Dev/mazeRunner/mazeRunner/Content/square.png</File>
+    <File>C:/Users/elyvic/repository/MazeRunner/mazeRunner/mazeRunner/Content/Red dot.png</File>
+    <File>C:/Users/elyvic/repository/MazeRunner/mazeRunner/mazeRunner/Content/square.png</File>
   </SourceFiles>
 </SourceFileCollection>
