@@ -12,7 +12,8 @@ namespace Maze
 
         Map map;
         Player player;
-        
+
+        GameTimer timer;
 
         public static int ScreenWidth;
         public static int ScreenHeight;
@@ -47,7 +48,9 @@ namespace Maze
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-
+            timer = new GameTimer(this, 0f);
+            timer.Font = Content.Load<SpriteFont>("Arial");
+            timer.TextPosition = new Vector2(0, 0);
 
             Tiles.Content = Content;
 
@@ -113,6 +116,8 @@ namespace Maze
             
 
             player.Load(Content);
+
+            Components.Add(timer);
             
             
         }
@@ -209,9 +214,15 @@ namespace Maze
                 Exit();
 
             player.Update(gameTime);
-            
 
-           
+            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            {
+                hasStarted = true;
+                timer.Started = true;
+            }
+
+            if (!hasStarted)
+                return;
 
             foreach (CollisionTiles tile in map.CollisionTiles)
             {
@@ -266,7 +277,7 @@ namespace Maze
             {
                 sprite.Draw(spriteBatch);
             }
-            
+            timer.Draw(spriteBatch);
 
             spriteBatch.End();
 
