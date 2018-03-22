@@ -36,6 +36,7 @@ namespace Maze
         {
             map = new Map();
             player = new Player();
+            
 
             base.Initialize();
         }
@@ -112,7 +113,8 @@ namespace Maze
             
 
             player.Load(Content);
-            //circle.Load(Content);
+            
+            
         }
 
         public void RestartCircles()
@@ -173,19 +175,19 @@ namespace Maze
                 new Circles(circleTexture)
                 {
                     Position = new Vector2(ScreenWidth / 2, 100f),
-                    velocity = new Vector2(800f, 0f)
+                    velocity = new Vector2(700f, 0f)
                 },
 
                 new Circles(circleTexture)
                 {
                     Position = new Vector2(ScreenWidth / 2, 200f),
-                    velocity = new Vector2(800f, 0f)
+                    velocity = new Vector2(700f, 0f)
                 },
 
                 new Circles(circleTexture)
                 {
                     Position = new Vector2(ScreenWidth / 2, 300f),
-                    velocity = new Vector2(800f, 0f)
+                    velocity = new Vector2(700f, 0f)
                 }
 
 
@@ -207,6 +209,7 @@ namespace Maze
                 Exit();
 
             player.Update(gameTime);
+            
 
            
 
@@ -227,11 +230,14 @@ namespace Maze
                 
             }
 
+            
+
             if (player.HasDied)
             {
                 Restart();
             }
            
+           // if(player.ToWin)
 
 
 
@@ -249,7 +255,7 @@ namespace Maze
         
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(player.color);
 
             spriteBatch.Begin();
 
@@ -260,6 +266,7 @@ namespace Maze
             {
                 sprite.Draw(spriteBatch);
             }
+            
 
             spriteBatch.End();
 

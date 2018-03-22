@@ -21,6 +21,10 @@ namespace Maze
        
 
         public bool HasDied = false;
+        public bool HasWon = false;
+        public Color color = Color.White;
+
+        public int Score;
 
         public Vector2 Position
         {
@@ -46,11 +50,22 @@ namespace Maze
 
             Input(gameTime);
 
+            if (position.X > Game1.ScreenWidth - 32 && position.Y > Game1.ScreenHeight - 32)
+            {
+                YouWin();
+            }
+
            
 
 
            
 
+        }
+
+        public void YouWin()
+        {
+            HasWon = true;
+            color = Color.Beige;
         }
 
 
@@ -115,11 +130,10 @@ namespace Maze
             if (this.rectangle.Intersects(CircleRect))
             {
                 this.HasDied = true;
-
-            }
-
-           
+           }
         }
+
+        
 
         public void Restart()
         {
@@ -130,7 +144,7 @@ namespace Maze
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(playerTexture, rectangle, Color.White);
+            spriteBatch.Draw(playerTexture, rectangle, color);
         }
 
     }
