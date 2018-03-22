@@ -54,9 +54,9 @@ namespace Maze
                 {0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1/*screen ends here*/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                {0,0,1,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,0,1,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                {0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                {0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                {0,0,1,0,0,1,0,0,1,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,0,0,1,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                {0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                {0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,1,0,0,1,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,0,0,1,0,0,1,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1/**/,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -120,18 +120,78 @@ namespace Maze
             var circleTexture = Content.Load<Texture2D>("red dot");
             _sprite = new List<Sprites>()
             {
+                //circles going up and down
                 new Circles(circleTexture)
                 {
-                    Position = new Vector2(100, ScreenHeight / 2),
+                    Position = new Vector2(60, ScreenHeight / 2),
                     velocity = new Vector2 (0, 450)
                 },
 
                 new Circles(circleTexture)
                 {
+                    Position = new Vector2(140, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 450)
+                },
+
+                new Circles(circleTexture)
+                {
+                    Position = new Vector2(230, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 450)
+                },
+
+                new Circles(circleTexture)
+                {
+                    Position = new Vector2(330, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 450)
+                },
+                new Circles(circleTexture)
+                {
+                    Position = new Vector2(430, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 450)
+                },
+
+                new Circles(circleTexture)
+                {
+                    Position = new Vector2(530, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 450)
+                },
+
+                new Circles(circleTexture)
+                {
+                    Position = new Vector2(630, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 450)
+                },
+
+                new Circles(circleTexture)
+                {
+                    Position = new Vector2(730, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 450)
+                },
+
+
+                //circles going left and right
+                new Circles(circleTexture)
+                {
                     Position = new Vector2(ScreenWidth / 2, 100f),
-                    velocity = new Vector2(900f, 0f)
+                    velocity = new Vector2(800f, 0f)
+                },
+
+                new Circles(circleTexture)
+                {
+                    Position = new Vector2(ScreenWidth / 2, 200f),
+                    velocity = new Vector2(800f, 0f)
+                },
+
+                new Circles(circleTexture)
+                {
+                    Position = new Vector2(ScreenWidth / 2, 300f),
+                    velocity = new Vector2(800f, 0f)
                 }
+
+
             };
+
+
         }
 
         
