@@ -4,8 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/elyvic/Desktop/Game Dev/Maze/Maze/Content/square.png</File>
-    <File>C:/Users/elyvic/Desktop/Game Dev/Maze/Maze/Content/BlackSquare.png</File>
-    <File>C:/Users/elyvic/Desktop/Game Dev/Maze/Maze/Content/Red dot.png</File>
+    <File>C:/Users/elyvic/repository/MazeRunner/Maze/Maze/Content/square.png</File>
+    <File>C:/Users/elyvic/repository/MazeRunner/Maze/Maze/Content/BlackSquare.png</File>
+    <File>C:/Users/elyvic/repository/MazeRunner/Maze/Maze/Content/Red dot.png</File>
   </SourceFiles>
 </SourceFileCollection>

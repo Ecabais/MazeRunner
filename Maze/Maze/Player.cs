@@ -14,10 +14,10 @@ namespace Maze
     class Player
     {
         private Texture2D playerTexture;
-        private Vector2 position = new Vector2(0 ,16);
+        private Vector2 position = new Vector2(0 ,48);
         private Vector2 velocity;
         private Rectangle rectangle;
-        private float speed = 4.5f;
+        private float speed = 4f;
        
 
         public bool HasDied = false;
@@ -123,7 +123,7 @@ namespace Maze
 
         public void Restart()
         {
-            position = new Vector2(0, 16);
+            position = new Vector2(0, 48);
         }
 
 

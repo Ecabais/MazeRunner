@@ -24,3 +24,29 @@ C:\Users\elyvic\Desktop\Game Dev\Maze\Maze\bin\Windows\x86\Debug\SharpDX.Direct3
 C:\Users\elyvic\Desktop\Game Dev\Maze\Maze\obj\x86\Debug\Maze.csprojResolveAssemblyReference.cache
 C:\Users\elyvic\Desktop\Game Dev\Maze\Maze\obj\x86\Debug\Maze.exe
 C:\Users\elyvic\Desktop\Game Dev\Maze\Maze\obj\x86\Debug\Maze.pdb
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\obj\x86\Debug\Maze.exe
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\obj\x86\Debug\Maze.pdb
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\Content\BlackSquare.xnb
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\Content\Red dot.xnb
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\Content\square.xnb
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\Maze.exe
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\Maze.pdb
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\elyvic\repository\MazeRunner\Maze\Maze\obj\x86\Debug\Maze.csprojResolveAssemblyReference.cache

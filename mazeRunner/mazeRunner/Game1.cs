@@ -32,7 +32,7 @@ namespace mazeRunner
             ScreenWidth = graphics.PreferredBackBufferWidth;
             ScreenHeight = graphics.PreferredBackBufferHeight;
         }
-
+    4
        
         protected override void Initialize()
         {
