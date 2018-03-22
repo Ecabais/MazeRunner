@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/elyvic/repository/MazeRunner/mazeRunner/mazeRunner/Content/square.png</SourceFile>
-  <SourceTime>2018-03-19T23:47:42.5094352-05:00</SourceTime>
+  <SourceTime>2018-03-20T02:22:37-05:00</SourceTime>
   <DestFile>C:/Users/elyvic/repository/MazeRunner/mazeRunner/mazeRunner/Content/bin/Windows/square.xnb</DestFile>
-  <DestTime>2018-03-20T01:15:31.1065121-05:00</DestTime>
+  <DestTime>2018-03-21T02:02:58.4287937-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T09:05:36-06:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
