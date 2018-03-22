@@ -14,6 +14,7 @@ namespace Maze
         protected Texture2D _texture;
         public Vector2 velocity;
         public Vector2 Position;
+        Player player;
         
 
         public float Speed = 5f;
@@ -34,7 +35,8 @@ namespace Maze
 
         public virtual void Update(GameTime gameTime, List<Sprites> sprite)
         {
-
+            
+            
         }
 
 
