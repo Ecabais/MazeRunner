@@ -15,8 +15,18 @@ namespace Maze
 
         GameTimer timer;
 
+        SpriteFont font;
+
+        
+
+
+        public int Attempt;
+
         public static int ScreenWidth;
         public static int ScreenHeight;
+
+        string text = "";
+        Vector2 textPosition = new Vector2(100, 0);
 
 
         private List<Sprites> _sprite;
@@ -51,6 +61,7 @@ namespace Maze
             timer = new GameTimer(this, 0f);
             timer.Font = Content.Load<SpriteFont>("Arial");
             timer.TextPosition = new Vector2(0, 0);
+            font = timer.Font;
 
             Tiles.Content = Content;
 
@@ -130,49 +141,40 @@ namespace Maze
                 //circles going up and down
                 new Circles(circleTexture)
                 {
-                    Position = new Vector2(60, ScreenHeight / 2),
-                    velocity = new Vector2 (0, 450)
+                    Position = new Vector2(70, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 400)
                 },
+
 
                 new Circles(circleTexture)
                 {
-                    Position = new Vector2(140, ScreenHeight / 2),
-                    velocity = new Vector2 (0, 450)
-                },
-
-                new Circles(circleTexture)
-                {
-                    Position = new Vector2(230, ScreenHeight / 2),
-                    velocity = new Vector2 (0, 450)
+                    Position = new Vector2(210, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 400)
                 },
 
                 new Circles(circleTexture)
                 {
                     Position = new Vector2(330, ScreenHeight / 2),
-                    velocity = new Vector2 (0, 450)
+                    velocity = new Vector2 (0, 400)
                 },
+               
+
                 new Circles(circleTexture)
                 {
-                    Position = new Vector2(430, ScreenHeight / 2),
-                    velocity = new Vector2 (0, 450)
+                    Position = new Vector2(470, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 400)
                 },
 
                 new Circles(circleTexture)
                 {
-                    Position = new Vector2(530, ScreenHeight / 2),
-                    velocity = new Vector2 (0, 450)
+                    Position = new Vector2(600, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 400)
                 },
 
                 new Circles(circleTexture)
                 {
-                    Position = new Vector2(630, ScreenHeight / 2),
-                    velocity = new Vector2 (0, 450)
-                },
-
-                new Circles(circleTexture)
-                {
-                    Position = new Vector2(730, ScreenHeight / 2),
-                    velocity = new Vector2 (0, 450)
+                    Position = new Vector2(710, ScreenHeight / 2),
+                    velocity = new Vector2 (0, 400)
                 },
 
 
@@ -180,19 +182,19 @@ namespace Maze
                 new Circles(circleTexture)
                 {
                     Position = new Vector2(ScreenWidth / 2, 100f),
-                    velocity = new Vector2(700f, 0f)
+                    
                 },
 
                 new Circles(circleTexture)
                 {
                     Position = new Vector2(ScreenWidth / 2, 200f),
-                    velocity = new Vector2(700f, 0f)
+                   
                 },
 
                 new Circles(circleTexture)
                 {
                     Position = new Vector2(ScreenWidth / 2, 300f),
-                    velocity = new Vector2(700f, 0f)
+                    
                 }
 
 
@@ -247,10 +249,10 @@ namespace Maze
             {
                 Restart();
             }
-           
-           // if(player.ToWin)
 
+            // if(player.ToWin)
 
+            text = "Attempts: " + Attempt.ToString();
 
             base.Update(gameTime);
         }
@@ -260,6 +262,10 @@ namespace Maze
             player.Restart();
             RestartCircles();
             player.HasDied = false;
+            Attempt++;
+
+
+            
            
         }
 
@@ -270,6 +276,7 @@ namespace Maze
 
             spriteBatch.Begin();
 
+            spriteBatch.DrawString(font, text, textPosition, Color.Black);
             map.Draw(spriteBatch);
             player.Draw(spriteBatch);
 

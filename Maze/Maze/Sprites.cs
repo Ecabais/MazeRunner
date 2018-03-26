@@ -12,7 +12,8 @@ namespace Maze
     class Sprites
     {
         protected Texture2D _texture;
-        public Vector2 velocity;
+        public Vector2 velocity = new Vector2(550f, 0f);
+        
         public Vector2 Position;
        
         
